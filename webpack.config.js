@@ -8,7 +8,6 @@ const ASSET_PATH = process.env.ASSET_PATH || '/';
 module.exports = {
     target: "node",
     externals: [nodeExternals()],
-    // context: __dirname,
     entry: [
         'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
         './src/backend/server.ts'
